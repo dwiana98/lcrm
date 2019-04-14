@@ -112,6 +112,64 @@ class AdminController extends Controller
         }
     }
 
+    // tutor
+    public function tutor()
+    {
+        return view('admin.tambah_tutor');
+    }
+
+    public function tambah_tutor(Request $r)
+    {
+        $r->validate([
+            'nama_tutor' => 'required',
+            'mata_pelajaran' => 'required',
+            'kode' => 'required',
+        ]);
+
+        $tutor = DB::table('tutor')->insert([
+            'nama_tutor' => $r->nama_tutor,
+            'mata_pelajaran' => $r->mata_pelajaran,
+            'kode' => $r->kode,
+        ]);
+        return back()->with('berhasil', 'Data Berhasil ditambah');
+    }
+
+    public function data_tutor()
+    {
+        $tutors = DB::table('tutor')->paginate(12);
+        return view('admin.data_tutor', ['tutors' => $tutors]);
+    }
+
+    public function ubah_tutor($id)
+    {
+        $tutor = DB::table('tutor')->where('id', $id)->first();
+        return view('admin.ubah_tutor', ['tutor' => $tutor]);
+    }
+
+    public function update_tutor(Request $r, $id)
+    {
+        $r->validate([
+            'nama_tutor' => 'required',
+            'mata_pelajaran' => 'required',
+            'kode' => 'required',
+        ]);
+
+        $tutor = DB::table('tutor')->where('id', $id)->update([
+            'nama_tutor' => $r->nama_tutor,
+            'mata_pelajaran' => $r->mata_pelajaran,
+            'kode' => $r->kode,
+        ]);
+        return redirect('/admin/data_tutor')->with('berhasil', 'Data berhasil diubah');
+    }
+
+    public function hapus_tutor($id)
+    {
+        $tutor= DB::table('tutor')->where('id', $id)->delete();
+        if ($tutor){
+            return back()->with('berhasil', 'Data Berhasil di Hapus');
+        }
+    }
+
     // Fasilitas
     public function t_fasilitas()
     {

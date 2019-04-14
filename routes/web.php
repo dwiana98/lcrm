@@ -33,6 +33,13 @@ Route::get('/archive/{slug}', 'HomeController@single');
 Route::middleware('auth')->group( function() {
     route::get('/admin/dashboard', 'AdminController@dashboard');
 
+    route::get('/admin/tambah_tutor', 'AdminController@tutor');
+    route::post('/admin/tambah_tutor', 'AdminController@tambah_tutor');
+    route::get('/admin/data_tutor', 'AdminController@data_tutor');
+    Route::get('/admin/tutor/{id}/ubah', 'AdminController@ubah_tutor');
+    Route::put('/admin/tutor/{id}/ubah', 'AdminController@update_tutor');
+    Route::get('/admin/tutor/{id}/hapus', 'AdminController@hapus_tutor');
+
     Route::get('/admin/tambah_archive', 'AdminController@archive');
     Route::post('/admin/tambah_archive', 'AdminController@t_archive');
     Route::get('/admin/data_archive', 'AdminController@data_archive');

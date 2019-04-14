@@ -36,6 +36,7 @@
                             </a>
                             <div class="dropdown-menu" id="MenuTambah">
                                 <a href="/admin/tambah_archive" class="dropdown-item">Tambah Archive</a>
+                                <a href="/admin/tambah_tutor" class="dropdown-item">Tambah Tutor</a>
                                 <a href="/admin/tambah_jadwal" class="dropdown-item">Tambah Jadwal</a>
                                 <a href="/admin/tambah_kontak" class="dropdown-item">Tambah Kontak</a>
                                 <a href="/admin/tambah_fasilitas" class="dropdown-item">Tambah Fasilitas</a>
@@ -56,6 +57,7 @@
                             </a>
                             <div class="dropdown-menu" id="MenuData">
                                 <a href="/admin/data_archive" class="dropdown-item">Data Archive</a>
+                                <a href="/admin/data_tutor" class="dropdown-item">Data Tutor</a>
                                 <a href="/admin/data_jadwal" class="dropdown-item">Data Jadwal</a>
                                 <a href="/admin/data_kuis" class="dropdown-item">Data Kuis</a>
                                 <a href="/admin/data_pendaftaran" class="dropdown-item">Data Pendaftaran</a>
