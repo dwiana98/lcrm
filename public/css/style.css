@@ -1,0 +1,75 @@
+body{
+    background: url(../images/leaf.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    background: rgb(255, 255, 255);
+}
+
+.jumbotron{
+    border-radius:0px;
+}
+
+.navbar-dark .nav-link{
+    color:rgb(255, 255, 255) !important;
+}
+
+.navbar-dark .nav-link:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: -2px;
+}
+
+.navbar .nav-item{
+    margin-right: 20px;
+}
+
+.navbar .nav-item:last-child{
+    margin-right: 0px;
+}
+
+.footer{
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+}
+
+.form-input{
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+}
+
+table tr td {
+     padding: 10px;
+     text-align: center;
+}
+
+.text-large{
+    font-size: 60px;
+    text-align: center;
+}
+
+.mb-6{
+    margin-bottom: 70px;
+}
+
+.thumbnail {
+    width: 100%;
+    background: var(--primary);
+    padding: 50px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+.f-custom {
+    font-size: 20px;
+}
+
+.overflow {
+    overflow-x: scroll;
+}
