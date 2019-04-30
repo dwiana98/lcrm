@@ -3,7 +3,7 @@
 
 @section('sidebar')
 {{-- Form Search --}}
-<form action="" method="get">
+<form action="/" method="get">
     <div class="input-group mb-3">
         <input type="text" class="form-control" name="search" placeholder="Cari...">
         <div class="input-group-append">
@@ -18,9 +18,9 @@
         Archive
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item"><a href="">Archive</a></li>
-        <li class="list-group-item"><a href="">Archive</a></li>
-        <li class="list-group-item"><a href="">Archive</a></li>
+        @foreach ($sideArchive as $content)
+            <li class="list-group-item"><a href="">{{ $content->judul }}</a></li>
+        @endforeach
     </ul>
 </div>
 {{-- End List Archive --}}

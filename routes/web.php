@@ -68,8 +68,12 @@ Route::middleware('auth')->group( function() {
     Route::put('/admin/biaya/{id}/ubah', 'AdminController@updated_biaya');
     Route::get('/admin/biaya/{id}/hapus', 'AdminController@hapus_biaya');
 
-    // Data
-    Route::get('/admin/data_kuis', 'AdminController@ubah_kuis');
+    Route::get('/admin/data_kuis', 'AdminController@data_kuis');
+    Route::get('/admin/tambah_kuis', 'AdminController@tambah_kuis');
+    Route::post('/admin/tambah_kuis', 'AdminController@simpan_kuis');
+    Route::get('/admin/kuis/{id}/ubah', 'AdminController@ubah_kuis');
+    Route::put('/admin/kuis/{id}/ubah', 'AdminController@updated_kuis');
+    Route::get('/admin/kuis/{id}/hapus', 'AdminController@hapus_kuis')->where(['id' => '[0-9]+']);
 
     Route::get('/admin/data_jadwal', 'AdminController@data_jadwal');
     Route::get('/admin/tambah_jadwal', 'AdminController@tambah_jadwal');

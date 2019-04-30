@@ -411,10 +411,81 @@ class AdminController extends Controller
     }
 
     // Kuis
-    public function ubah_kuis()
+    public function tambah_kuis()
     {
-        return view('admin.data_kuis');
+        return view('admin.tambah_kuis');
     }
+
+    public function simpan_kuis(Request $r)
+    {
+        $r->validate([
+            'judul' => 'required',
+            'file' => 'required',
+            'keterangan' => 'required',
+        ]);
+
+        $kuis = DB::table('kuis')->insert([
+            'judul' => $r->judul,
+            'file' => $r->file,
+            'keterangan' => $r->keterangan,
+        ]);
+        return back()->with('berhasil', 'Data berhasil di simpan');
+    }
+
+    public function ubah_kuis($id)
+    {
+        $kuis = DB::table('kuis')->where('id', $id)->first();
+        return view('admin.ubah_kuis', ['kuis' => $kuis]);
+    }
+
+    public function updated_kuis(Request $r, $id)
+    {
+        $r->validate([
+            'judul' => 'required',
+            'file' => 'required',
+            'keterangan' => 'required',
+        ]);
+
+        $kuis = DB::table('kuis')->where('id', $id)->update([
+            'judul' => $r->judul,
+            'file' => $r->file,
+            'keterangan' => $r->keterangan,
+
+        ]);
+        return redirect('/admin/data_kuis')->with('Berhasil', 'Data Berhasil di Ubah');
+    }
+
+    public function data_kuis()
+    {
+        $quis = DB::table('kuis')->orderBy('created_at', 'desc')->get();
+        return view('admin.data_kuis', ['quis' => $quis]);
+    }
+
+    public function update_kuis(Request $r, $id)
+    {
+        $r->validate([
+            'judul' => 'required',
+            'file' => 'required',
+            'keterangan' => 'required',
+        ]);
+
+        $kuis = DB::table('kuis')->where('id', $id)->update([
+            'judul' => $r->judul,
+            'file' => $r->file,
+            'keterangan' => $r->keterangan,
+
+        ]);
+        return redirect('/admin/data_kuis')->with('Berhasil', 'Data Berhasil di Ubah');
+    }
+
+    public function hapus_kuis($id)
+    {
+        $quis = DB::table('kuis')->where('id',$id)->delete();
+        if ($quis){
+            return back()->with('berhasil', 'Data Berhasil di Hapus');
+        }
+    }
+
 
     // Pendaftaran
     public function data_pendaftaran()

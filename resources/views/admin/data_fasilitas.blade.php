@@ -19,7 +19,7 @@
     @php $i = 1;  @endphp
     @foreach ($facilitas as $fasilitas)
         <tr>
-            <td>{{ $fasilitas->id }}</td>
+            <td>{{ $i }}</td>
             <td>{{ $fasilitas->nama_fasilitas }}</td>
             <td>{{ $fasilitas->jumlah }}</td>
             <td>{{ $fasilitas->keterangan }}</td>
@@ -28,6 +28,7 @@
                 <a href="/admin/fasilitas/{{$fasilitas->id}}/hapus" class="text-danger">Hapus</a>
             </td>
         </tr>
+    @php $i++;  @endphp
     @endforeach
 </table>
 

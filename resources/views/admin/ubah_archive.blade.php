@@ -24,6 +24,6 @@
         <textarea name="deskripsi" class="form-control" name="deskripsi" placeholder="deskripsi" id="deskripsi" rows="8">{{ $archive->deskripsi}}</textarea>
     </div>
 
-    <button type="submit" class="btn btn-block btn-lg btn-primary">Masukan Data</button>
+    <button type="submit" class="btn btn-block btn-lg btn-primary">Ubah Data</button>
 </form>
 @endsection

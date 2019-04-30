@@ -25,7 +25,8 @@ class HomeController extends Controller
     public function single($slug)
     {
         $arc = DB::table('archive')->where('slug', $slug)->join('users', 'users.id', '=', 'archive.user_id')->first();
-        return view('page.single-archive', ['archive' => $arc]);
+        $sideArchive = DB::table('archive')->orderBy('id', 'desc')->limit(4)->get();
+        return view('page.single-archive', ['archive' => $arc, 'sideArchive' => $sideArchive]);
     }
 
     public function sejarah()

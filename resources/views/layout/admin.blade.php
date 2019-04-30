@@ -38,6 +38,7 @@
                                 <a href="/admin/tambah_archive" class="dropdown-item">Tambah Archive</a>
                                 <a href="/admin/tambah_tutor" class="dropdown-item">Tambah Tutor</a>
                                 <a href="/admin/tambah_jadwal" class="dropdown-item">Tambah Jadwal</a>
+                                <a href="/admin/tambah_kuis" class="dropdown-item">Tambah Kuis</a>
                                 <a href="/admin/tambah_kontak" class="dropdown-item">Tambah Kontak</a>
                                 <a href="/admin/tambah_fasilitas" class="dropdown-item">Tambah Fasilitas</a>
                                 <a href="/admin/tambah_galeri" class="dropdown-item">Tambah Galeri</a>

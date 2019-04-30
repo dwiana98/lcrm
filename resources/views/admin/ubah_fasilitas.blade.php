@@ -29,6 +29,6 @@
         <input type="text" class="form-control" name="keterangan" id="keterangan" value="{{ $fasilitas->keterangan}}">
     </div>
 
-    <button type="submit" class="btn btn-block btn-lg btn-primary">Masukan Data</button>
+    <button type="submit" class="btn btn-block btn-lg btn-primary">Ubah Data</button>
 </form>
 @endsection

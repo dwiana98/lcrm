@@ -43,6 +43,6 @@
             @endforeach
         </select>
     </div>
-    <button type="submit" class="btn btn-primary">Simpan</button>
+    <button type="submit" class="btn btn-primary">Ubah Data</button>
 </form>
 @endsection

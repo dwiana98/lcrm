@@ -93,7 +93,7 @@
                 <option value="umum">Umum</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-block btn-lg btn-primary">Daftar</button>
+        <button type="submit" class="btn btn-block btn-lg btn-primary">Ubah Pendaftaran</button>
     </form>
 </div>
 

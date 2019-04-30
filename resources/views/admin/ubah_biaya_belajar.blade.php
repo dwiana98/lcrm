@@ -28,6 +28,6 @@
         <textarea name="keterangan" class="form-control" name="keterangan" placeholder="keterangan" id="keterangan" rows="8">{{ $biaya->keterangan }}</textarea>
     </div>
 
-    <button type="submit" class="btn btn-primary">Simpan</button>
+    <button type="submit" class="btn btn-primary">Ubah Data</button>
 </form>
 @endsection
