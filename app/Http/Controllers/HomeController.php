@@ -71,7 +71,8 @@ class HomeController extends Controller
 
     public function kuis()
     {
-        return view('page.kuis');
+        $quises = DB::table('kuis')->get();
+        return view('page.kuis', ['quises' => $quises]);
     }
 
     public function pendaftaran()
