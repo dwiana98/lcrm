@@ -15,11 +15,11 @@
 
 <body>
 
-    {{-- Navbar --}}
+    {{-- Header --}}
     <nav class="navbar navbar-dark bg-primary sticky-top">
         <span class="navbar-brand mb-0 h1">Navbar</span>
     </nav>
-    {{-- EndNavbar --}}
+    {{-- EndHeader --}}
 
     {{-- Content --}}
     <div class="container-fluid mb-6">
