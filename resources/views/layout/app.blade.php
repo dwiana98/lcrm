@@ -70,11 +70,11 @@
             {{-- content --}}
             <div class="row">
                 {{-- Content --}}
-                <div class="col-md-9 mb-3 py-5 px-5">
+                <div class="col-md-9 mb-3 py-3 px-5">
                     @yield('content')
                 </div>
                 {{-- End content --}}
-                
+
                 {{-- SideBar --}}
                 <div class="col-md-3 mb-3 py-3 px-3">
                     @yield('sidebar')

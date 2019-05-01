@@ -44,7 +44,7 @@
             </div>
         </div>
     @empty
-        <h2>Data tidak ada</h2>
+        <h2 class="p-3">Data tidak ada</h2>
     @endforelse
     <div class="col-md-12">
         {{ $archives->appends(Request::input())->onEachSide(1)->links() }}

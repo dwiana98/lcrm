@@ -72,8 +72,8 @@ class AdminController extends Controller
             'judul' => $r->judul,
             'deskripsi' => $r->deskripsi,
             'user_id' => Auth::user()->id,
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
         return back()->with('berhasil', 'Data berhasil di simpan');
     }
