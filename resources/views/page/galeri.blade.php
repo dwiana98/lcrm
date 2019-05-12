@@ -7,7 +7,7 @@
     @foreach ($galleries as $galeri)
         <div class="col-md-4 mb-3">
             <div class="card shadow" style="height:100%;">
-                <img src="{{ $galeri->foto }}" class="card-img-top" alt="{{ $galeri->judul }}">
+                <a href="{{ $galeri->foto }}" target="_blank"><img src="{{ $galeri->foto }}" class="card-img-top" alt="{{ $galeri->judul }}"></a>
                 <div class="card-body">
                     <h5 class="card-title">{{ $galeri->judul }}</h5>
                     <p class="card-text"> {{ $galeri->keterangan }} </p>

@@ -26,8 +26,10 @@ Route::post('/pendaftaran', 'HomeController@daftar');
 
 // admin router
 Route::get('/create/admin', 'AdminController@create');
-Route::get('/login', 'AdminController@login')->name('login');
-Route::post('/login', 'AdminController@action_login');
+Route::middleware(['guest'])->group(function() {
+    Route::get('/login', 'AdminController@login')->name('login');
+    Route::post('/login', 'AdminController@action_login');
+});
 Route::get('/archive/{slug}', 'HomeController@single');
 
 Route::middleware('auth')->group( function() {

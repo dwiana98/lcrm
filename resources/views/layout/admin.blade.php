@@ -24,7 +24,7 @@
     {{-- Content --}}
     <div class="container-fluid mb-6">
         <div class="row">
-            {{-- Sidebar --}}
+            {{-- Navbar --}}
             <div class="col-md-2 mt-3">
                 <div class="card">
                     <ul class="list-group">

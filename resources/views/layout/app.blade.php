@@ -20,7 +20,7 @@
 
             {{-- header --}}
             <div class="jumbotron py-0 px-0 mb-0">
-                <img src="{{ asset('images/header.jpg')}}" width="100%" alt="Header Image" />
+                <img src="{{ asset('images/header2.jpg')}}" width="100%" alt="Header Image" />
             </div>
             {{-- End Header --}}
 
@@ -57,11 +57,6 @@
                         <a class="nav-item nav-link" href="/galeri">Galeri</a>
                         <a class="nav-item nav-link" href="/kuis">Kuis</a>
                         <a class="nav-item nav-link" href="/pendaftaran">Pendaftaran</a>
-                        @if(!Auth::user())
-                            <a class="nav-item nav-link" href="/login">LogIn Admin</a>
-                        @else
-                            <a class="nav-item nav-link" href="/admin/dashboard">Dashboard</a>
-                        @endif
                     </div>
                 </div>
             </div>

@@ -28,8 +28,13 @@
     </div>
 
     <div class="form-group">
-        <label for="kontak">Kontak</label>
-        <input type="text" class="form-control" name="kontak" id="kontak">
+        <label for="hp"> Hp </label>
+        <input type="text" class="form-control" name="hp" id="hp">
+    </div>
+
+    <div class="form-group">
+        <label for="email"> E-mail </label>
+        <input type="text" class="form-control" name="email" id="email">
     </div>
 
     <div class="form-group">

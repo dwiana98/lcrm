@@ -8,7 +8,8 @@
         <td>No</td>
         <td>Foto Kontak</td>
         <td>Nama Kontak</td>
-        <td>Kontak</td>
+        <td>Hp</td>
+        <td>E-mail</td>
         <td>Option</td>
     </tr>
     @php $i = 1;  @endphp
@@ -17,7 +18,8 @@
             <td>{{ $i }}</td>
             <td><img src="{{ $contact->foto}}" width="200" height="150" alt=""></td>
             <td>{{ $contact->nama_kontak }}</td>
-            <td>{{ $contact->kontak }}</td>
+            <td>{{ $contact->hp }}</td>
+            <td>{{ $contact->email }}</td>
             <td>
                 <a href="/admin/kontak/{{$contact->id}}/ubah" class="mr-3">Ubah</a>
                 <a href="/admin/kontak/{{$contact->id}}/hapus" class="text-danger">Hapus</a>

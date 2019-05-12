@@ -553,7 +553,8 @@ class AdminController extends Controller
         $r->validate([
             'foto' => 'required',
             'nama_kontak' => 'required',
-            'kontak' => 'required',
+            'hp' => 'required',
+            'email' => 'required',
             'keterangan' => 'required',
 
         ]);
@@ -561,7 +562,8 @@ class AdminController extends Controller
         $contacts = DB::table('kontak')->insert([
             'foto' => $r->foto,
             'nama_kontak' => $r->nama_kontak,
-            'kontak' => $r->kontak,
+            'hp' => $r->hp,
+            'email' => $r->email,
             'keterangan' => $r->keterangan,
 
         ]);
@@ -585,7 +587,8 @@ class AdminController extends Controller
         $r->validate([
             'foto' => 'required',
             'nama_kontak' => 'required',
-            'kontak' => 'required',
+            'hp' => 'required',
+            'email' => 'required',
             'keterangan' => 'required',
 
         ]);
@@ -593,7 +596,8 @@ class AdminController extends Controller
         $contacts = DB::table('kontak')->where('id', $id)->update([
             'foto' => $r->foto,
             'nama_kontak' => $r->nama_kontak,
-            'kontak' => $r->kontak,
+            'hp' => $r->hp,
+            'email' => $r->email,
             'keterangan' => $r->keterangan,
 
         ]);
