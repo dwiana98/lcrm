@@ -14,7 +14,7 @@ class HomeController extends Controller
     {
         $url = urlencode($request->search);
         if ($request->search == null) {
-            $archives = DB::table('archive')->orderBy('archive.created_at', 'desc')->join('users', 'users.id', '=', 'archive.user_id')->paginate(12);
+            $archives = DB::table('archive')->orderBy('archive.created_at', 'desc')->join('users', 'users.id', '=', 'archive.user_id')->paginate(3);
         } else {
             $archives = DB::table('archive')->where('judul', 'LIKE', '%'.str_replace('-', ' ', $url).'%')->orderBy('archive.created_at', 'desc')->join('users', 'users.id', '=', 'archive.user_id')->paginate(12);
         }

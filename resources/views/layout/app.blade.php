@@ -47,13 +47,12 @@
                                 Informasi
                             </a>
                             <div class="dropdown-menu" id="MenuInformasi">
-                                <a href="/biaya_belajar" class="dropdown-item">Biaya Belajar</a>
-                                <a href="/jadwal" class="dropdown-item">Jadwal Belajar</a>
-                                <a href="/fasilitas" class="dropdown-item">Fasilitas</a>
-                                <a href="/kontak" class="dropdown-item">Kontak</a>
+                                <a class="dropdown-item" href="/jadwal">Jadwal Belajar</a>
                             </div>
                         </div>
-
+                        <a class="nav-item nav-link" href="/biaya_belajar">Biaya Belajar</a>
+                        <a class="nav-item nav-link" href="/fasilitas">Fasilitas</a>
+                        <a class="nav-item nav-link" href="/kontak">Kontak</a>
                         <a class="nav-item nav-link" href="/galeri">Galeri</a>
                         <a class="nav-item nav-link" href="/kuis">Kuis</a>
                         <a class="nav-item nav-link" href="/pendaftaran">Pendaftaran</a>

@@ -7,7 +7,7 @@
             @foreach ($facilitas as $fasilitas)
                 <div class="col-md-4">
                     <div class="card" style="height: 100%;">
-                        <h2 class="thumbnail">{{ $fasilitas->nama_fasilitas}}</h2>
+                        <img src="{{ $fasilitas->gbr_fasilitas }}" width="100%" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Jumlah {{ $fasilitas->jumlah }}</h5>
                             <p class="card-text">{{ $fasilitas->keterangan }}</p>

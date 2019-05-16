@@ -19,8 +19,8 @@
     {{ csrf_field() }}
 
     <div class="form-group">
-        <label for="nama_fasilitas">Nama Fasilitas</label>
-        <input type="text" class="form-control" name="nama_fasilitas" id="nama_fasilitas">
+        <label for="gbr_fasilitas">Gambar Fasilitas</label>
+        <input type="text" class="form-control" name="gbr_fasilitas" id="gbr_fasilitas">
     </div>
 
     <div class="form-group">

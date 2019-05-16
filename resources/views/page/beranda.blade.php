@@ -23,6 +23,8 @@
         @endforeach
     </ul>
 </div>
+    <img class="shadow-lg p-3 rounded" src="{{asset('images/disc.jpg')}}" alt="disc" width="250px" height="250px">
+    <a href="/pendaftaran"><img class="shadow-lg p-3 rounded" src="{{asset('images/daftar.jpg')}}" alt="daftar" width="250px" height="250px"></a>
 {{-- End List Archive --}}
 
 @endsection

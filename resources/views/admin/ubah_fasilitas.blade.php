@@ -15,8 +15,8 @@
     {{ csrf_field() }}
     @method('PUT')
     <div class="form-group">
-        <label for="nama_fasilitas">Nama Fasilitas</label>
-        <input type="text" class="form-control" name="nama_fasilitas" id="nama_fasilitas" value="{{ $fasilitas->nama_fasilitas}}">
+        <label for="gbr_fasilitas">Gambar Fasilitas</label>
+        <input type="text" class="form-control" name="gbr_fasilitas" id="gbr_fasilitas" value="{{ $fasilitas->gbr_fasilitas}}">
     </div>
 
     <div class="form-group">

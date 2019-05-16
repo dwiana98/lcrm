@@ -179,13 +179,13 @@ class AdminController extends Controller
     public function fasilitas(Request $r)
     {
         $r->validate([
-            'nama_fasilitas' => 'required',
+            'gbr_fasilitas' => 'required',
             'jumlah' => 'required',
             'keterangan' => 'required',
         ]);
 
         $fasilitas = DB::table('fasilitas')->insert([
-            'nama_fasilitas' => $r->nama_fasilitas,
+            'gbr_fasilitas' => $r->gbr_fasilitas,
             'jumlah' => $r->jumlah,
             'keterangan' => $r->keterangan,
             'created_at' => Carbon::now(),
@@ -209,13 +209,13 @@ class AdminController extends Controller
     public function update_fasilitas(Request $r, $id)
     {
         $r->validate([
-            'nama_fasilitas' => 'required',
+            'gbr_fasilitas' => 'required',
             'jumlah' => 'required',
             'keterangan' => 'required',
         ]);
 
         $fasilitas = DB::table('fasilitas')->where('id', $id)->update([
-            'nama_fasilitas' => $r->nama_fasilitas,
+            'gbr_fasilitas' => $r->gbr_fasilitas,
             'jumlah' => $r->jumlah,
             'keterangan' => $r->keterangan,
         ]);

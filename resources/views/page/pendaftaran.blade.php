@@ -33,7 +33,7 @@
                     <input type="text" class="form-control" name="tempat" id="ttl" placeholder="Tempat">
                 </div>
                 <div class="col-md-8">
-                    <input type="date" class="form-control" name="tgl_lahir" id="date" placeholder="Tanggal">
+                    <input type="text" class="form-control" name="tgl_lahir" id="date" placeholder="Tanggal">
                 </div>
             </div>
         </div>

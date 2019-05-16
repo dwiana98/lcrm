@@ -15,7 +15,7 @@ class Fasilitas extends Migration
     {
         Schema::create('fasilitas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama_fasilitas', 30);
+            $table->string('gbr_fasilitas', 30);
             $table->string('jumlah', 10);
             $table->string('keterangan', 30);
             $table->timestampsTz();

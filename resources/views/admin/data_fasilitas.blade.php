@@ -11,7 +11,7 @@
 <table border="1">
     <tr>
         <td>No</td>
-        <td>Nama Fasilitas</td>
+        <td>Gambar Fasilitas</td>
         <td>Jumlah</td>
         <td>Keterangan</td>
         <td>Option</td>
@@ -20,7 +20,7 @@
     @foreach ($facilitas as $fasilitas)
         <tr>
             <td>{{ $i }}</td>
-            <td>{{ $fasilitas->nama_fasilitas }}</td>
+            <td>{{ $fasilitas->gbr_fasilitas }}</td>
             <td>{{ $fasilitas->jumlah }}</td>
             <td>{{ $fasilitas->keterangan }}</td>
             <td>
