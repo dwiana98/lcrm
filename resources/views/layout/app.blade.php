@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title> @yield('title') </title>
+    <meta name="author" content="Andre Maulana">
+    <meta name="keywords" content="learning, learning center, learning baturaja, learning rajawali, baturaja methematic">
+    <meta name="description" content="Bimbingan belajar untuk sekolah SD, SMP dan SMA">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css?p='. time()) }}" />
