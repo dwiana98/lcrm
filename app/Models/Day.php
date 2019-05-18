@@ -11,6 +11,6 @@ class Day extends Model
 
     public function jadwals()
     {
-        return $this->hasMany('App\Models\jadwal');
+        return $this->hasMany('App\Models\Jadwal');
     }
 }
