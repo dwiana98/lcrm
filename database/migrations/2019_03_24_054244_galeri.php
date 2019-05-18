@@ -15,7 +15,7 @@ class Galeri extends Migration
     {
         Schema::create('galeri', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('judul', 30);
+            $table->string('judul', 100);
             $table->string('foto', 255);
             $table->string('keterangan', 255);
             $table->timestampsTz();

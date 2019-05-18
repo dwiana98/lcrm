@@ -23,15 +23,15 @@
         @endforeach
     </ul>
 </div>
-    <img class="shadow-lg p-3 rounded" src="{{asset('images/disc.jpg')}}" alt="disc" width="250px" height="250px">
-    <a href="/pendaftaran"><img class="shadow-lg p-3 rounded" src="{{asset('images/daftar.jpg')}}" alt="daftar" width="250px" height="250px"></a>
+    <img class="shadow-lg p-3 rounded" src="{{asset('images/discount.jpg')}}" alt="disc" width="100%">
+    <a href="/pendaftaran"><img class="shadow-lg p-3 rounded" src="{{asset('images/pendaftaran.jpg')}}" alt="daftar" width="100%"></a>
 {{-- End List Archive --}}
 
 @endsection
 
 @section('content')
 <div class="jumbotron bg-white border border-info shadow p-3 mb-5 rounded">
-    <h1 class="display-6"> Sambutan Pemilik <br> Learning Center Rajawali Mathematic</h1>
+    <h1 style="font-size:40px"> Sambutan Pemilik <br> Learning Center Rajawali Mathematic</h1>
     <p class="lead"> Andre Maulana, A.Ma., S.Pd.</p>
     <hr class="my-4">
     <p class="text-justify">Assalamu'alaikum Wr. Wb</p>

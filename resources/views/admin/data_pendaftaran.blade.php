@@ -3,7 +3,11 @@
 
 @section('content')
     <h2>Data Pendaftaran</h2>
-
+    @if (session('berhasil'))
+        <div class="alert alert-success">
+            {{ session('berhasil')}}
+        </div>
+    @endif
 <div class="overflow">
     <table border="1">
         <tr>

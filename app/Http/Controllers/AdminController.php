@@ -101,7 +101,7 @@ class AdminController extends Controller
             'judul' => $r->judul,
             'deskripsi' => $r->deskripsi,
         ]);
-        return redirect('/admin/data_archive')->with('berhasil', 'Data berhasil di simpan');
+        return redirect('/admin/data_archive')->with('berhasil', 'Data Berhasil di Ubah');
     }
 
     public function hapus_archive($id)
@@ -131,7 +131,7 @@ class AdminController extends Controller
             'mata_pelajaran' => $r->mata_pelajaran,
             'kode' => $r->kode,
         ]);
-        return back()->with('berhasil', 'Data Berhasil ditambah');
+        return back()->with('berhasil', 'Data Berhasil di Simpan');
     }
 
     public function data_tutor()
@@ -159,7 +159,7 @@ class AdminController extends Controller
             'mata_pelajaran' => $r->mata_pelajaran,
             'kode' => $r->kode,
         ]);
-        return redirect('/admin/data_tutor')->with('berhasil', 'Data berhasil diubah');
+        return redirect('/admin/data_tutor')->with('berhasil', 'Data berhasil di Ubah');
     }
 
     public function hapus_tutor($id)
@@ -191,7 +191,7 @@ class AdminController extends Controller
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
-        return back()->with('berhasil', 'Data berhasil di simpan');
+        return back()->with('berhasil', 'Data Berhasil di Simpan');
     }
 
     public function data_fasilitas()
@@ -219,7 +219,7 @@ class AdminController extends Controller
             'jumlah' => $r->jumlah,
             'keterangan' => $r->keterangan,
         ]);
-        return redirect('/admin/data_fasilitas')->with('berhasil', 'Data berhasil di simpan');
+        return redirect('/admin/data_fasilitas')->with('berhasil', 'Data Berhasil di Ubah');
     }
 
     public function hapus_fasilitas($id)
@@ -250,7 +250,7 @@ class AdminController extends Controller
             'foto' => $r->foto,
             'keterangan' => $r->keterangan,
         ]);
-        return back()->with('berhasil', 'Data berhasil di simpan');
+        return back()->with('berhasil', 'Data Berhasil di Simpan');
     }
 
     public function data_galeri()
@@ -306,7 +306,7 @@ class AdminController extends Controller
             'biaya_belajar' => $r->biaya_belajar,
             'keterangan' => $r->keterangan,
         ]);
-        return back()->with('berhasil', 'Data berhasil di simpan');
+        return back()->with('berhasil', 'Data Berhasil di Simpan');
     }
 
     public function ubah_biaya($id)
@@ -381,14 +381,14 @@ class AdminController extends Controller
             'kelas' => $r->kelas,
             'tutor' => $r->tutor,
         ]);
-        return redirect('/admin/data_jadwal')->with('Berhasil', 'Data Berhasil di Ubah');
+        return redirect('/admin/data_jadwal')->with('berhasil', 'Data Berhasil di Ubah');
     }
 
     public function hapus_jadwal($id)
     {
         $jadwals = DB::table('jadwal')->where('id',$id)->delete();
         if ($jadwals){
-            return back()->with('Berhasil', 'Data Berhasil di Hapus');
+            return back()->with('berhasil', 'Data Berhasil di Hapus');
         }
     }
     public function simpan_jadwal(Request $r)
@@ -407,7 +407,7 @@ class AdminController extends Controller
             'kelas' => $r->kelas,
             'tutor' => $r->tutor,
         ]);
-        return back()->with('berhasil', 'Data berhasil di simpan');
+        return back()->with('berhasil', 'Data Berhasil di Simpan');
     }
 
     // Kuis
@@ -429,7 +429,7 @@ class AdminController extends Controller
             'file' => $r->file,
             'keterangan' => $r->keterangan,
         ]);
-        return back()->with('berhasil', 'Data berhasil di simpan');
+        return back()->with('berhasil', 'Data Berhasil di Simpan');
     }
 
     public function ubah_kuis($id)
@@ -452,7 +452,7 @@ class AdminController extends Controller
             'keterangan' => $r->keterangan,
 
         ]);
-        return redirect('/admin/data_kuis')->with('Berhasil', 'Data Berhasil di Ubah');
+        return redirect('/admin/data_kuis')->with('berhasil', 'Data Berhasil di Ubah');
     }
 
     public function data_kuis()
@@ -475,7 +475,7 @@ class AdminController extends Controller
             'keterangan' => $r->keterangan,
 
         ]);
-        return redirect('/admin/data_kuis')->with('Berhasil', 'Data Berhasil di Ubah');
+        return redirect('/admin/data_kuis')->with('berhasil', 'Data Berhasil di Ubah');
     }
 
     public function hapus_kuis($id)
@@ -524,7 +524,7 @@ class AdminController extends Controller
             'no_tlp' => $r->no_tlp,
             'paket' => $r->paket,
         ]);
-        return redirect('/admin/data_pendaftaran')->with('Berhasil', 'Data Berhasil di Ubah');
+        return redirect('/admin/data_pendaftaran')->with('berhasil', 'Data Berhasil di Ubah');
     }
 
 
@@ -567,7 +567,7 @@ class AdminController extends Controller
             'keterangan' => $r->keterangan,
 
         ]);
-        return back()->with('berhasil', 'Data berhasil di simpan');
+        return back()->with('berhasil', 'Data Berhasil di Simpan');
     }
 
     public function data_kontak()
@@ -601,13 +601,14 @@ class AdminController extends Controller
             'keterangan' => $r->keterangan,
 
         ]);
-        return redirect('/admin/data_kontak')->with('Berhasil', 'Data Berhasil di Ubah');
+        return redirect('/admin/data_kontak')->with('berhasil', 'Data Berhasil di Ubah');
     }
+
     public function hapus_kontak($id)
     {
         $contacts = DB::table('kontak')->where('id', $id)->delete();
         if ($contacts) {
-            return back();
+            return back()->with('berhasil', 'Data Berhasil di Hapus');
         }
     }
 }

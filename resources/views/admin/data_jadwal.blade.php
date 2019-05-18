@@ -3,6 +3,11 @@
 
 @section('content')
 <h2 class="mb-4">Jadwal Bimbel</h2>
+@if (session('berhasil'))
+    <div class="alert alert-success">
+        {{ session('berhasil')}}
+    </div>
+@endif
 @foreach ($days as $day)
 <h3> {{ $day->day}}</h3>
 <table class="mb-3" border="1" style="width:100%">

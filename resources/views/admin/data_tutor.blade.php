@@ -3,6 +3,11 @@
 
 @section('content')
 <h2 class="mb-4">Data Tutor</h2>
+@if (session('berhasil'))
+    <div class="alert alert-success">
+        {{ session('berhasil')}}
+    </div>
+@endif
 <table border="1">
     <tr>
         <td>No</td>
