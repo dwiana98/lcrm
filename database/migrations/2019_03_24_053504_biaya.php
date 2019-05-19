@@ -17,7 +17,7 @@ class Biaya extends Migration
             $table->bigIncrements('id');
             $table->string('paket_belajar', 30);
             $table->string('biaya_belajar', 30);
-            $table->string('keterangan', 30);
+            $table->text('keterangan');
             $table->timestampsTz();
         });
     }
