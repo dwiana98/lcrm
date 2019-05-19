@@ -30,17 +30,20 @@
 @endsection
 
 @section('content')
-<div class="jumbotron bg-white border border-info shadow p-3 mb-5 rounded">
-    <h1 style="font-size:40px"> Sambutan Pemilik <br> Learning Center Rajawali Mathematic</h1>
-    <p class="lead"> Andre Maulana, A.Ma., S.Pd.</p>
-    <hr class="my-4">
-    <p class="text-justify">Assalamu'alaikum Wr. Wb</p>
-    <p class="text-justify">Salam Hangat Dan Selamat Datang Di Website Bimbel Learning Center Rajawali Mathematic.</p>
-    <p class="text-justify">Segala puji tercurahkan atas kehadirat Allah SWT atas limpahan rahmat dan karunia-Nya. Begitu pula tak lupa kita sampaikan salam dan shalawat kepada Junjungan kita Nabi Besar Muhammad SAW beserta keluarga dan sahabat dan kita semua selaku umatnya yang selalu setia mengamalkan ajaran-ajaran dari beliau</p>
-    <p class="text-justify">Bimbel Learning Center Rajawali Mathematic adalah lembaga pendidikan non formal yang bergerak di bidang jasa untuk mengisi jam kosong diluar jam sekolah serta membantu sisa-siswi yang memiliki kesulitan dalam mengerjakan tugas ataupun pelajaran disekolah.</p>
-    <p class="text-justify">Dengan adanya website ini saya selaku pemilik berharap agar website ini dapat bermanfaat bagi masyarakat dan siswa-siswi yang membutuhkan informasi mengenai bimbingan belajar.</p>
-    <p>Wassalamu'alaikum Wr. Wb</p>
-</div>
+@if ( !Request::input() )
+    <div class="jumbotron bg-white border border-info shadow p-3 mb-5 rounded">
+        <h1 style="font-size:40px"> Sambutan Pemilik <br> Learning Center Rajawali Mathematic</h1>
+        <p class="lead"> Andre Maulana, A.Ma., S.Pd.</p>
+        <hr class="my-4">
+        <p class="text-justify">Assalamu'alaikum Wr. Wb</p>
+        <p class="text-justify">Salam Hangat Dan Selamat Datang Di Website Bimbel Learning Center Rajawali Mathematic.</p>
+        <p class="text-justify">Segala puji tercurahkan atas kehadirat Allah SWT atas limpahan rahmat dan karunia-Nya. Begitu pula tak lupa kita sampaikan salam dan shalawat kepada Junjungan kita Nabi Besar Muhammad SAW beserta keluarga dan sahabat dan kita semua selaku umatnya yang selalu setia mengamalkan ajaran-ajaran dari beliau</p>
+        <p class="text-justify">Bimbel Learning Center Rajawali Mathematic adalah lembaga pendidikan non formal yang bergerak di bidang jasa untuk mengisi jam kosong diluar jam sekolah serta membantu sisa-siswi yang memiliki kesulitan dalam mengerjakan tugas ataupun pelajaran disekolah.</p>
+        <p class="text-justify">Dengan adanya website ini saya selaku pemilik berharap agar website ini dapat bermanfaat bagi masyarakat dan siswa-siswi yang membutuhkan informasi mengenai bimbingan belajar.</p>
+        <p>Wassalamu'alaikum Wr. Wb</p>
+    </div>
+@endif
+
 <div class="row">
     @forelse ($archives as $archive)
         <div class="col-md-4 mb-4 shadow p-3 mb-5 bg-white rounded">
