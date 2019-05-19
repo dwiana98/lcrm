@@ -15,6 +15,7 @@ class Kontak extends Migration
     {
         Schema::create('kontak', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('foto',255);
             $table->string('nama_kontak', 100);
             $table->string('hp', 100);
             $table->string('email', 150);
