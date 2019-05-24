@@ -82,6 +82,9 @@
             <div class="footer py-2 bg-primary text-center">
                 @copy_right2019 <br>
                 Learning Center Rajawali Methematic Baturaja
+                <br>
+                Create by Dwiana Novita
+                Mahasiswa AMIK AKMI BATURAJA
             </div>
             {{-- end footer --}}
 
