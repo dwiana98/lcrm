@@ -19,7 +19,7 @@
     </div>
     <ul class="list-group list-group-flush">
         @foreach ($sideArchive as $content)
-            <li class="list-group-item"><a href="">{{ $content->judul }}</a></li>
+            <li class="list-group-item"><a href="/archive/{{ $content->slug }}">{{ $content->judul }}</a></li>
         @endforeach
     </ul>
 </div>
