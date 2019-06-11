@@ -84,7 +84,7 @@
                 Learning Center Rajawali Methematic Baturaja
                 <br>
                 Create by Dwiana Novita
-                Mahasiswa AMIK AKMI BATURAJA
+                Mahasiswa <a href="http://www.akmi-baturaja.ac.id/" class="text-white" target="_blank">AMIK AKMI BATURAJA</a>
             </div>
             {{-- end footer --}}
 
