@@ -25,6 +25,9 @@ Route::get('/pendaftaran', 'HomeController@pendaftaran');
 Route::post('/pendaftaran', 'HomeController@daftar');
 
 // admin router
+Route::get('/admin', function() {
+	return redirect('/login');
+});
 Route::get('/create/admin', 'AdminController@create');
 Route::middleware(['guest'])->group(function() {
     Route::get('/login', 'AdminController@login')->name('login');
